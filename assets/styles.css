@@ -2,9 +2,8 @@
 /*for building reference*/
 * {
    border: 1px solid red;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
-   -webkit-margin-collapse: collapse;
-}
+   font-family: 'Public Sans', sans-serif;
+ }
 
 .body {
    width: 100vw;
@@ -25,8 +24,9 @@
 /* Navigation Section */
 
 .nav-bg {
-   height: fit-content;
+   height: 50px;   /* height and margin-top properties fill white line at top of web page  */
    width: 100vw;
+   margin-top: -10px;
    background-color: #1F2937;
    display: flex;
    justify-content: center;
@@ -35,8 +35,8 @@
 
 .nav-bar {
    height: 25px;
-   width:  770px;        /* if I try to set a generic width it collapses to content and therefore negates justify-content */
-   max-width: 770px;
+   width: 970px;        /* if I try to set a generic width it collapses to content and therefore negates justify-content */
+   max-width: 970px;
    display: flex;
    flex-direction: row;
    align-items: center;
@@ -46,7 +46,6 @@
 
 .logo {
    width: auto;
-
    color: #F9FAF8;
    font-size: 24px;
    font-weight: 800;
@@ -62,7 +61,9 @@
    margin-block: 0;
    padding-inline: 0;
    gap: 8px;
-   color: #F9FAF8;
+   color: #E5E7EB;
+   opacity: 80%;
+   font-size: 18px;
 }
 
 .links li {
@@ -77,15 +78,15 @@
 /* This is to keep the page centered and the section backgrounds full-width*/
 
 section {
-   width: 800px;
-   max-width: 800px;
+   width: 1000px;
+   max-width: 1000px;
    display: flex;
    flex-flow: column wrap;
    justify-content: center;
    align-items: center;
 }
 
-.section-bg {
+.section-bg-dark {
    height: fit-content;
    width: 100vw;
    background-color: #1F2937;
@@ -98,22 +99,52 @@ section {
 /* -------SECTION ONE------- */
 
 .section-one {
-   max-width: 800px;
+   max-width: 1000px;
+   margin: 2.5rem auto;
 }
 
 .hero-container {
    display: flex;
-   margin: 2rem;
+   margin: 30px;
+   width: 930px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.hero-content {
+   max-width: 400px;
 }
 
 .hero-content h1 {
    color: #F9FAF8;
    font-weight: 700;
+   font-size: 44px;
+   margin: 0px;
+}
+
+.hero-content .text {
+   color: #e5e7eb;
+   opacity: 80%;
+   font-size: 18px;
+   margin-top: 8px;
 }
 
 .hero-image {
+   display: flex;
    border: 1px solid black;
-   height: 150px;
+   height: 260px;
    width: 500px;
    background-color: gray;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero-content button{
+   background-color: #3882F6;
+   color: #F9FAF8;
+   width: 120px;
+   margin-top: 15px;
+   font-weight: 600;
+   padding: 8px;
+   border-radius:8px;
 }
