@@ -205,3 +205,31 @@ section {
    justify-content: center;
    align-items: center;
 }
+
+.quote-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 650px;
+   height: auto;
+   margin: 50px auto 60px auto;
+}
+
+.quote {
+   font-size: 34px;
+   font-weight: 200;
+   font-style: oblique;
+   color: #1F2937;
+   margin-bottom: 0px;
+}
+
+.quote-sub {
+   font-size: 18px;
+   font-weight: 800;
+   align-self: flex-end;
+   margin: 0px;
+}
+
+
+
