@@ -1,0 +1,50 @@
+
+/*for building reference*/
+* {
+   border: 1px solid red;
+}
+
+
+/* container for entire page to center */
+
+.page {
+   max-width: 800px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+/* Navigation Section */
+
+.nav-bar {
+   height: 25px;
+   width: 780px;        /* if I try to set a generic width it collapses to content and therefore negates justify-content */
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 10px;
+}
+
+.logo {
+   width: auto;
+}
+
+
+.links {
+   display: flex;
+   width: auto;
+   justify-content: flex-end;
+   align-items: center;
+   margin-block: 0;
+   padding-inline: 0;
+   gap: 8px;
+}
+
+.links li {
+   list-style-type: none; /*removes bullet*/
+   list-style-position: inside;
+   min-width: fit-content;
+}
