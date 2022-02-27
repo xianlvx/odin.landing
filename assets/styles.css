@@ -20,7 +20,7 @@
 
 .nav-bar {
    height: 25px;
-   width: 780px;        /* if I try to set a generic width it collapses to content and therefore negates justify-content */
+   width: 700px;        /* if I try to set a generic width it collapses to content and therefore negates justify-content */
    display: flex;
    flex-direction: row;
    align-items: center;
